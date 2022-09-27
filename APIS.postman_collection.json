@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "7f5ded32-5a83-4723-9da1-85a7c313a91a",
+		"name": "APIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23533647"
+	},
+	"item": [
+		{
+			"name": "agregar tabla1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"nombre\": \"pepito\",\r\n \"apellido\": \"armando\",\r\n \"edad\": \"22\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/agregar_tabla1.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"agregar_tabla1.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabla1 delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/tabla1_eliminar.php?id_usuario=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"tabla1_eliminar.php"
+					],
+					"query": [
+						{
+							"key": "id_usuario",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar tabla1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id_usuario\": \"3\",\r\n \"nombre\": \"Esteban\",\r\n \"apellido\": \"Santamaria\",\r\n \"edad\": \"20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/actualizar_tabla1.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"actualizar_tabla1.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabla 1 busqueda con parametros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id_usuario",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/busqueda_tabla1_parametro.php?id_usuario=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"busqueda_tabla1_parametro.php"
+					],
+					"query": [
+						{
+							"key": "id_usuario",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabla 1 busqueda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/busqueda_tabla1.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"busqueda_tabla1.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar tabla  2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"usuario\": 1,\r\n \"desc1\": \"Estudiante\",\r\n \"desc2\": \"Unicordoba\",\r\n \"fecha\": \"24-09-2022 04:54:00\",\r\n \"fecha2\": \"24-09-2022\",\r\n \"num1\": 7,\r\n \"num2\": 7.5,\r\n \"email\": \"xxxxxxxx.gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/agregar_tabla2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"agregar_tabla2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabla2 delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\": \"1\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/tabla1_eliminar.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"tabla1_eliminar.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar tabla2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\": 1,\r\n \"usuario\": 1,\r\n \"desc1\": \"Estudiante nuevo\",\r\n \"desc2\": \"Unicordoba nuevo\",\r\n \"fecha\": \"25-09-2022 05:00:00\",\r\n \"fecha2\": \"25-09-2022\",\r\n \"num1\": 8,\r\n \"num2\": 8.5,\r\n \"email\": \"estudianteunicordoba@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/actualizar_tabla2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"actualizar_tabla2.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabla 2 busqueda con parametros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/busqueda_tabla2_parametro.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"busqueda_tabla2_parametro.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabla 2 busqueda",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CRUD_tabla/busqueda_tabla2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CRUD_tabla",
+						"busqueda_tabla2.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
